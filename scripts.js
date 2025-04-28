@@ -551,6 +551,7 @@ function setupSearchInput() {
   });
 }
 
+// Setup place order button event listener
 function setupPlaceOrderButton() {
   const placeOrderBtn = document.getElementById('place-order-btn');
   if (!placeOrderBtn) return;
@@ -594,6 +595,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('items-list')) {
     // Customer page (index.html)
     renderCustomerItems();
+    setupSearchInput();
   }
   if (document.getElementById('basket-list') && !document.getElementById('items-list')) {
     // Place order page (placeorder.html)
